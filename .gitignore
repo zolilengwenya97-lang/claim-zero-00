@@ -1,24 +1,16 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+# Laptop install — CodeBuild runs npm install inside Docker, not from this folder.
+node_modules/
 
-node_modules
-dist
-dist-ssr
-*.local
+# Local Vite output — the image build produces dist/ inside Docker.
+dist/
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+# Terraform working files — never commit state or the lock/plugin cache.
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+crash.log
+
+# Local variable values (your GitHub owner/repo). Keep them on the laptop.
+*.tfvars
+!*.tfvars.example
