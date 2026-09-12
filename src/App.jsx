@@ -45,7 +45,7 @@ function App() {
 
       {/* Supporting value statement. */}
       <p className="tagline">
-        Building the Next Generation of Cloud Engineers — shipped from GitHub.
+        Building the Next Generation of Cloud Engineers — shipped from GitHub again.
       </p>
 
     </div>
